@@ -1,3 +1,4 @@
+
 import { Quote } from './quote';
 
 describe('Quote', () => {
@@ -5,3 +6,5 @@ describe('Quote', () => {
     expect(new Quote()).toBeTruthy();
   });
 });
+
+

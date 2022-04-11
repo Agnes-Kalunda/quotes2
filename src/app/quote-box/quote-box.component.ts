@@ -38,13 +38,13 @@ export class QuoteBoxComponent {
   }
   //upvote logic
   upVoteQuote(index: number){
-    var up=this.quotes[index].upVote+1;
-    this.quotes[index].upVote=up;
+    var up=this.quotes[index].upvote+1;
+    this.quotes[index].upvote=up;
   }
   //downvote logic
   downVoteQuote(index:  number){
-    var down=this.quotes[index].downVote+1;
-    this.quotes[index].downVote=down;
+    var down=this.quotes[index].downvote+1;
+    this.quotes[index].downvote=down;
   }
   //nw quote logic
   addNewQuote(quotes: Quote){
@@ -53,7 +53,7 @@ export class QuoteBoxComponent {
   this.quotes.push(quotes)
   }
   //quote with highest upvotes
-  arr:number[]=this.quotes.map(quotes=>quotes.upVote);
+  arr:number[]=this.quotes.map(quotes=>quotes.upvote);
   highest =Math.max(...this.arr);
   constructor() {}
   ngOnInit(){}
