@@ -7,13 +7,14 @@ import { Quote } from "../quote";
   styleUrls: ["./quote-box.component.scss"],
 })
 export class QuoteBoxComponent {
-  quote: Quote[]= [
-    new Quote ()
-  ]
+  // quote: Quote[]= [
+  //   new Quote ()
+  // ]
   // @Input() author!: string;
   // @Input() quote!: string;
   // @Input() tweetURL!: string;
   // @Input() getNewQuote!: () => void;
 
   constructor() {}
+  ngOnInit(){}
  }
