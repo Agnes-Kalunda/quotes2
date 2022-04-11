@@ -1,38 +1,25 @@
-import { TestBed } from "@angular/core/testing";
-import { AppComponent } from "./app.component";
-import { QuoteBoxComponent } from "./quote-box/quote-box.component";
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-describe("AppComponent", () => {
+import { QuoteDetailsComponent } from './quote-details.component';
+
+describe('QuoteDetailsComponent', () => {
+  let component: QuoteDetailsComponent;
+  let fixture: ComponentFixture<QuoteDetailsComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent, QuoteBoxComponent],
-    }).compileComponents();
+      declarations: [ QuoteDetailsComponent ]
+    })
+    .compileComponents();
   });
 
-  it("should create the app", () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it("should render loading text when loading", () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+  beforeEach(() => {
+    fixture = TestBed.createComponent(QuoteDetailsComponent);
+    component = fixture.componentInstance;
     fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(app.loading).toBeTrue();
-    expect(compiled.querySelector("#loading").textContent).toEqual(
-      "loading..."
-    );
   });
 
-  it("should render QuoteBoxComponent after loading", async () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    await app.fetchData();
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(app.loading).toBeFalse();
-    expect(compiled.querySelector("app-root app-quote-box")).toBeDefined();
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 });

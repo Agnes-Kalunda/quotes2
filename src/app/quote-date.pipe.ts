@@ -5,9 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class QuoteDatePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
+  // transform(value: unknown, ...args: unknown[]): unknown {
+  //   return null;
+  // }
   transform(dateInput: any)  {
     let seconds: any = Math.floor(( new Date() as any - dateInput) / 1000);
   
