@@ -11,5 +11,5 @@ export class QuoteBoxComponent {
   @Input() tweetURL!: string;
   @Input() getNewQuote!: () => void;
 
-//   constructor() {}
-// }
+  constructor() {}
+ }
