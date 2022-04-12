@@ -8,7 +8,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
 $blue: #58f;
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  body{
+      background-color: rgba(14, 82, 59, 0.521);
+  }
 html,
 body {
   margin: 0;

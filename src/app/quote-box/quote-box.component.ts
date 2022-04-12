@@ -15,12 +15,10 @@ export class QuoteBoxComponent {
   // @Input() tweetURL!: string;
   // @Input() getNewQuote!: () => void;
   quotes: Quote[]=[
-    new Quote(1,"Paul","You can have it all.Just not all at once.","Oprah Winfrey",new Date(1999,5,7),15 ,1,),
-    new Quote(2,"Rick","Beause paper has more patience than people.", "Anonymous",new Date(2012,5,3),9 , 2),
-    new Quote(3,"Darleen","The best way to predict the future is to create it.","Abraham Lincon", new Date(2019,9,2), 20 , 0),
-    new Quote(4,"Milly","Take every chance drop every fear.", "Martin Luther",new Date(2021,2,2) ,33, 5),
-    new Quote(5,"Dolly","There can be miracles when you believe.", "Whitney Houston",new Date(2007,2,2) ,60, 1),
-    new Quote(6,"Pam","Magic is believing in yourself.","Anonymous",new Date(2021,2,2) ,40, 2),
+    new Quote(1,"Paul","You fdkjgg dlkkkkflmk dfkdmlkf dfmkd dffmf fdmklf.","Mary",new Date(1999,5,7),15 ,1,),
+    new Quote(2,"Rick","kdnfm", "Anonymous",new Date(2012,5,3),9 ,2),
+    new Quote(3,"Darleen","The jfdnkvd dksmksf dfkfmdk dkmlkd dfmk dklkd","Abraham Lincon", new Date(2019,9,2), 20 , 0),
+   
   ];
   // delete button
   quoteDelete(isComplete: boolean, index:number ){
@@ -41,18 +39,17 @@ export class QuoteBoxComponent {
     var up=this.quotes[index].upvote+1;
     this.quotes[index].upvote=up;
   }
-  //downvote logic
+  
   downVoteQuote(index:  number){
     var down=this.quotes[index].downvote+1;
     this.quotes[index].downvote=down;
   }
-  //nw quote logic
+  
   addNewQuote(quotes: Quote){
   let quoteLength = this.quotes.length;
   quotes.id = quoteLength+1;
   this.quotes.push(quotes)
   }
-  //quote with highest upvotes
   arr:number[]=this.quotes.map(quotes=>quotes.upvote);
   highest =Math.max(...this.arr);
   constructor() {}
