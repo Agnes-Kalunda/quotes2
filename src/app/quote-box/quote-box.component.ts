@@ -15,9 +15,9 @@ export class QuoteBoxComponent {
   // @Input() tweetURL!: string;
   // @Input() getNewQuote!: () => void;
   quotes: Quote[]=[
-    new Quote(1,"Paul","You fdkjgg dlkkkkflmk dfkdmlkf dfmkd dffmf fdmklf.","Mary",new Date(1999,5,7),15 ,1,),
-    new Quote(2,"Rick","kdnfm", "Anonymous",new Date(2012,5,3),9 ,2),
-    new Quote(3,"Darleen","The jfdnkvd dksmksf dfkfmdk dkmlkd dfmk dklkd","Abraham Lincon", new Date(2019,9,2), 20 , 0),
+    new Quote(1,"wayne","You fdkjgg dlkkkkflmk dfkdmlkf dfmkd dffmf fdmklf.","Mary",new Date(1999,5,7),15 ,1,),
+    new Quote(2,"mayne","kdnfm", "Anonymous",new Date(2012,5,3),9 ,2),
+    new Quote(3,"bruce","The jfdnkvd dksmksf dfkfmdk dkmlkd dfmk dklkd","Abraham Lincon", new Date(2019,9,2), 20 , 0),
    
   ];
   // delete button

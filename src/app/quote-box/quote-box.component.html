@@ -64,13 +64,13 @@
       </div>
      -->
 <div class="row mt-5">
-  <div class="col-md-4" *ngFor="let quote of quote;let i = index">
+  <div class="col-md-4" *ngFor="let quote of quotes;let i = index">
     <div class="card">
       <div class="card-body"></div>
       <h5 class="card-title">{{quote.quote}}</h5>
       <p>{{quote.author}}</p>
       <hr>
-      <div *ngIf='quote.show'>
+      <div *ngIf='quote.showDetails'>
       </div>
       <!-- <app-details></app-details> -->
       <div class="row">
