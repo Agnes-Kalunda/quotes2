@@ -38,4 +38,4 @@ export class QuoteDatePipe implements PipeTransform {
   
   }
     }
-}
+

@@ -1,4 +1,4 @@
-#form{
+/* #form{
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6.5px );
@@ -8,7 +8,7 @@
     
     }
     /* class style */
-    .another-quote{
+    /* .another-quote{
         width: 60%;
         margin: 5vh auto;
         padding: 1vh;
@@ -35,4 +35,4 @@
     .text{
         color:rgb(24, 56, 24);
         font-weight: bold;
-    }
+    } */ 
